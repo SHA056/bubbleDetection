@@ -1,3 +1,11 @@
+## .reg to .txt conversion script
+
+```
+python3 common/ds9_regions_to_catalogue.py \
+        data/curated/saods9/name_of_galaxy.reg \
+        -o  data/curated/catalogue/name_of_galaxy.txt
+```
+    
 ## Layout
 
 ```
@@ -7,8 +15,14 @@ bubbleDetection/
 │
 ├── data/                     
 │   ├── raw/                   
+│       └── catalogue/                   
+│       └── fits/                   
+│           └── moreGalaxies/                   
 │   └── curated/    
+│       └── catalogue/                   
+│       └── saods9/                   
 │   └── processed_seg/
+│       └── ...                   
 │   └── processed_det/
 │
 ├── common/                    

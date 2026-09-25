@@ -1,14 +1,3 @@
 *.DS_Store
-*.numbers
 *experiments*
-*diagnostics*
-*Diagnostics*
 *.pdf
-od_*
-*chapter*
-*docs*
-*latex*
-*ngc1566*
-*experiments*
-*__pycache__
-*noskip*
