@@ -1,0 +1,44 @@
+{
+  "command": "scripts/whereismybubble.py --image aestheticallyPleasing/moreGalaxies/ngc1087_f770w.fits --model outputs/models/stage02fold3bubble_unet.keras --output results/ngc1087_shaped/reduced",
+  "timestamp_utc": "2026-08-20T15:43:06+00:00",
+  "runtime_s": 6.1,
+  "image": {
+    "path": "aestheticallyPleasing/moreGalaxies/ngc1087_f770w.fits",
+    "grid": [
+      1176,
+      1779
+    ],
+    "channels": 1,
+    "wcs_source": "aestheticallyPleasing/moreGalaxies/ngc1087_f770w.fits"
+  },
+  "model": {
+    "path": "outputs/models/stage02fold3bubble_unet.keras",
+    "sha256": "65820fc181a78b099cadf1e66b904ab3ad9d83b38a6cec65364dd3bcda75b6dc",
+    "input_shape": [
+      256,
+      256,
+      1
+    ]
+  },
+  "parameters": {
+    "threshold": 0.5,
+    "min_blob_px": 20,
+    "watershed": true,
+    "watershed_min_distance": 2,
+    "min_axis_ratio": 0.412,
+    "patch": 256,
+    "stride": 128,
+    "distance_pc": 9770000.0
+  },
+  "git_commit": "f216bb1",
+  "versions": {
+    "python": "3.11.10",
+    "numpy": "2.4.3",
+    "tensorflow": "2.21.0"
+  },
+  "results": {
+    "n_candidates": 359,
+    "mask_px": 151941,
+    "prob_max": 0.9985
+  }
+}

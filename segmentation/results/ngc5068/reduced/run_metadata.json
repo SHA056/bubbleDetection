@@ -1,0 +1,43 @@
+{
+  "command": "scripts/whereismybubble.py --image data/raw/fits/hlsp_phangs-jwst_jwst_miri_ngc5068_f770w_v1p1_img.fits --model outputs/models/stage02fold3bubble_unet.keras --output results/ngc5068/reduced",
+  "timestamp_utc": "2026-08-19T18:06:16+00:00",
+  "runtime_s": 20.4,
+  "image": {
+    "path": "data/raw/fits/hlsp_phangs-jwst_jwst_miri_ngc5068_f770w_v1p1_img.fits",
+    "grid": [
+      2699,
+      2705
+    ],
+    "channels": 1,
+    "wcs_source": "data/raw/fits/hlsp_phangs-jwst_jwst_miri_ngc5068_f770w_v1p1_img.fits"
+  },
+  "model": {
+    "path": "outputs/models/stage02fold3bubble_unet.keras",
+    "sha256": "65820fc181a78b099cadf1e66b904ab3ad9d83b38a6cec65364dd3bcda75b6dc",
+    "input_shape": [
+      256,
+      256,
+      1
+    ]
+  },
+  "parameters": {
+    "threshold": 0.5,
+    "min_blob_px": 20,
+    "watershed": true,
+    "watershed_min_distance": 2,
+    "patch": 256,
+    "stride": 128,
+    "distance_pc": 9770000.0
+  },
+  "git_commit": "f216bb1",
+  "versions": {
+    "python": "3.11.10",
+    "numpy": "2.4.3",
+    "tensorflow": "2.21.0"
+  },
+  "results": {
+    "n_candidates": 1475,
+    "mask_px": 221870,
+    "prob_max": 0.999
+  }
+}
